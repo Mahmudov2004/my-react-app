@@ -1,0 +1,56 @@
+/* /src/components/Candidates/Candidates.module.css */
+.Candidates {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+.Candidates-content {
+  text-align: center;
+  width: 100%;
+}
+.Candidates-content h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.Candidates-content p {
+  margin-bottom: 20px;
+}
+.can {
+  border: rgba(200, 198, 221, 0.75);
+  margin: 40px 0;
+  padding: 15px 33px;
+  background-color: rgba(61, 30, 221, 0.9);
+  color: white;
+}
+.gradient {
+  position: relative;
+  width: 100%;
+}
+.gradient::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, black 50%, white 50%);
+  z-index: -2;
+}
+.img {
+  width: 850px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.quote-container {
+  align-items: center;
+  margin-top: 50px;
+}
+.img_dop1 {
+  width: 70px;
+  margin-left: -300px;
+}
+.img_dop2 {
+  width: 80px;
+  margin-left: 210px;
+}

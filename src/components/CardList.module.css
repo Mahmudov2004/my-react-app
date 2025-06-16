@@ -1,0 +1,16 @@
+
+.cardList {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.loading,
+.error {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+}
+.error {
+  color: red;
+}

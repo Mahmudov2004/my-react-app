@@ -1,0 +1,20 @@
+.featuresSection {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+.featuresSection h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 40px;
+}
+.cardDisplay {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.featuresSlider {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
