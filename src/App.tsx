@@ -1,9 +1,23 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Layout } from './components/layout/Layout.tsx';
+import { HomePage } from './pages/HomePage.tsx';
+import { CardsPage } from './pages/CardsPage';
+import { NotFoundPage } from './pages/NotFoundPage';
 
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+const App = () => {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<HomePage />} />
+                    <Route path="cards" element={<CardsPage />} />
+                    <Route path="*" element={<NotFoundPage />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
 
-import Layout from "./layout/Layout"; 
-import HomePage from "./pages/HomePage/HomePage";
-import CardsPage from "./pages/CardsPage/CardsPage";
-import NotFoundPage from "./pages//NotFoundPage";
+    );
+};
 
+export default App;

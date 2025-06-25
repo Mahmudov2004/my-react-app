@@ -1,12 +1,11 @@
-
 import React from 'react';
 
 type MessageProps = {
-  text: string;
+    text: string;
 };
 
 const Message: React.FC<MessageProps> = ({ text }) => {
-  return <div>{text}</div>;
+    return <p>{text}</p>;
 };
 
 export default Message;
