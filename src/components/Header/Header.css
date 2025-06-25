@@ -33,6 +33,7 @@ header {
     margin: 5px;
     padding: 20px 35px;
     transition: background-color 0.2s;
+    color: white;
     height: 20px;
     cursor: pointer;
   }
